@@ -12,7 +12,7 @@ Desafio para vaga de estagio
 
 - yarn add install
 
-- !![image](https://user-images.githubusercontent.com/72813560/109456243-26f03b00-7a37-11eb-83db-8aefb3cb8506.png)
+- ![image](https://user-images.githubusercontent.com/72813560/109456243-26f03b00-7a37-11eb-83db-8aefb3cb8506.png)
 
 
 - 02 Em seguida você deverá rodar no terminal dentro do diretório app/ o comando npm start
@@ -39,6 +39,8 @@ Desafio para vaga de estagio
 
 - ![image](https://user-images.githubusercontent.com/72813560/109456065-c52fd100-7a36-11eb-9098-0f8dc23ce522.png)
 
+#### Importante lembrar !! Para o projeto rodar no front o server deve esta startado .
+
 ## Uso da API
 
 
@@ -52,3 +54,23 @@ Desafio para vaga de estagio
 ### Buscado por uma categoria:
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/72813560/109454432-fdcdab80-7a32-11eb-9ddf-4eab109470e4.gif)
+
+
+
+## Responsivo 
+
+![image](https://user-images.githubusercontent.com/72813560/109457089-eabdda00-7a38-11eb-8375-5f0b98b3d6ff.png)
+
+
+## Fermamentas, framework's, e blibliotecas  usadas !
+
+### No back-end:
+- insominia
+- axios
+- Node.js
+
+### No front-end:
+- React.js
+- axios
+- Material-ui
+- 
