@@ -10,3 +10,5 @@ Desafio para vaga de estagio
 
 
 ### Buscado por uma categoria:
+
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/72813560/109454432-fdcdab80-7a32-11eb-9ddf-4eab109470e4.gif)
