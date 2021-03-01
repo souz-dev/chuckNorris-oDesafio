@@ -1,5 +1,7 @@
 # chuckNorris-oDesafio
-Desafio para vaga de estagio
+
+
+
 
 ## Para rodar a aplicação você devera seguir esses passos
 #### Aqui você ira roda o front-end
@@ -73,4 +75,7 @@ Desafio para vaga de estagio
 - React.js
 - axios
 - Material-ui
-- 
+
+## Api untilizada:
+
+-https://api.chucknorris.io/
