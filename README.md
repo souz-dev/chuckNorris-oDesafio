@@ -76,6 +76,6 @@
 - axios
 - Material-ui
 
-## Api untilizada:
+## Api utilizada:
 
 -https://api.chucknorris.io/
