@@ -1,19 +1,15 @@
-import React, { useEffect} from 'react';
+import React, { useEffect } from 'react';
 import Api from '../services/Api';
-import {Input, 
-        InputLabel, 
-        MenuItem, 
-        FormControl, 
-        Select,
-        TextField, 
-        makeStyles, 
-        useTheme
-}from '@material-ui/core/';
-
-
-
-
-
+import { 
+  Input, 
+  InputLabel, 
+  MenuItem, 
+  FormControl, 
+  Select,
+  TextField, 
+  makeStyles, 
+  useTheme
+} from '@material-ui/core/';
 
 const useStyles = makeStyles((theme) => ({
   form: {
@@ -82,36 +78,42 @@ export default function MultipleSelect({handleInputChange, handleSelectedChange,
     });
   }, [])
   return (
-    
-    
-      <div  className={classes.form}>
-       <TextField
-          value={value}
-          onChange={handleInputChange}
-          id="standard-textarea"
-          label="Busque uma Historia!"
-          placeholder="Placeholder"
-          multiline
-        />
-      <FormControl className={classes.formControl} >
-        <InputLabel id="demo-mutiple-name-label">Categorias</InputLabel>
-        <Select
-          
-          labelId="demo-mutiple-name-label"
-          id="demo-mutiple-name"
-          value={personName}
-          onChange={onchange}
-          input={<Input />}
-          MenuProps={MenuProps}
-        >
-          {categorias.map((name) => (
-            <MenuItem key={name} value={name} style={getStyles(name, personName, theme)}>
-              {name}
-            </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
-      </div>
+    <div  className={ classes.form }>
+      <TextField
+        value={ value }
+        onChange={ handleInputChange }
+        id="standard-textarea"
+        label="Busque uma Historia!"
+        placeholder="Busque uma Historia!"
+        multiline
+      />
+    <FormControl className={ classes.formControl } >
+      <InputLabel id="demo-mutiple-name-label">Categorias</InputLabel>
+      <Select
+        labelId="demo-mutiple-name-label"
+        id="demo-mutiple-name"
+        value={ personName }
+        onChange={ onchange }
+        input={ <Input /> }
+        MenuProps={ MenuProps }
+      >
+        {categorias.map((name) => (
+          <MenuItem
+            key={ name } 
+            value={ name }
+            style={ 
+              getStyles(
+                name,
+                personName,
+                theme
+              ) }
+          >
+          {name}
+          </MenuItem>
+        ))}
+      </Select>
+    </FormControl>
+    </div>
     
   );
 }

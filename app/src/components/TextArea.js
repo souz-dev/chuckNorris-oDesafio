@@ -21,10 +21,10 @@ const useStyles = makeStyles((theme) => ({
 function TextArea({history}){
   const classes = useStyles();
   return(
-    <div className={classes.root}>
-      <Grid item xs={10}>
-      <Paper className={classes.paper}>
-        <p>{history.value}</p>
+    <div className={ classes.root }>
+      <Grid item xs={ 10 }>
+      <Paper className={ classes.paper }>
+        <p>{ history.value }</p>
         </Paper>
       </Grid>
     </div>

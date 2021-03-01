@@ -11,8 +11,7 @@ const useStyles = makeStyles({
       alignItems: 'center',
       justifyContent: 'space-between',
       flexDirection: 'column',
-      textAlign: 'center',
-      
+      textAlign: 'center',  
     },
     reader: {
       background: '#f1f2f3'
@@ -38,14 +37,14 @@ useEffect(() => {
  async  function onClick(e){
   if (Palavrachave !== "" ){
     
-    Api.get(`/random?category/${Palavrachave}`).then( category => {
+    Api.get(`/random?category/${ Palavrachave }`).then( category => {
       const categores = category.data
       setHistory([categores])
       setPalavrachave("")
     })
   }  else if(Categorias !== "") {
     
-    Api.get(`/search/${Categorias}`).then( category => {
+    Api.get(`/search/${ Categorias }`).then( category => {
      const categores = category.data
      setHistory(categores.result) 
     });
@@ -58,21 +57,24 @@ useEffect(() => {
  }
  const classes = useStyles();
 
-    return(
-        <Container className={classes.root}>
-          
-            <Header />
-            <Sidebar
-            value={Palavrachave}
-             handleInputChange={handleInputChange} 
-             handleSelectedChange={handleSelectedChange}/>
-            <Botao handleOnclick={onClick}/>
-             {histories?.map(item =>(
-               <TextArea key={item.id} history={item}/>
-             ))}
-            <Footer />
-          </Container>
-    ) 
+  return(
+    <Container className={ classes.root }>
+      <Header />
+      <Sidebar
+        value={ Palavrachave }
+        handleInputChange={ handleInputChange } 
+        handleSelectedChange={ handleSelectedChange }
+      />
+      <Botao
+          handleOnclick={onClick}/>
+          {histories?.map(item =>(
+      <TextArea
+          key={item.id}
+          history={item}/>
+          ))}
+      <Footer />
+    </Container>
+  ) 
 }
 
 export default Home;

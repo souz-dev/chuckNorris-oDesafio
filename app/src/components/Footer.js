@@ -18,8 +18,8 @@ function Footer(){
   const classes = useStyles();
     return (
       
-        <div className={classes.root}>
-          <img  src={ChuckGif}  width="50px" height="50px" alt="Chuck-Invible"/>
+        <div className={ classes.root }>
+          <img  src={ ChuckGif }  width="50px" height="50px" alt="Chuck-Invible"/>
           <p> © 2021 Desenvolvido por Hiago Souza - Desafio ParMais.</p>
         </div>
       

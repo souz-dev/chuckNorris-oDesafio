@@ -22,13 +22,13 @@ const useStyles = makeStyles({
 function Header(){
   const classes = useStyles();
     return(
-      <nav  className={classes.header}>
+      <nav  className={ classes.header }>
         
           <img  src={Chuck} width="200px" margin-bottom="" alt="Chuck-Invible"/>
           
           <div > 
-          <h1 className={classes.h1}>Chuck Norris</h1>
-          <p className={classes.p}>Uma lenda, varias histórias!</p>
+          <h1 className={ classes.h1 }>Chuck Norris</h1>
+          <p className={ classes.p }>Uma lenda, varias histórias!</p>
           </div>
       </nav>
     );

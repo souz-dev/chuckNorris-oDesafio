@@ -9,10 +9,15 @@ const useStyles = makeStyles({
 
  })
 
- function BtnSearch({handleOnclick}) {
+ function BtnSearch({ handleOnclick }) {
   const classes = useStyles();
   return (
-    <Button variant="contained" className={classes.btn}  color='primary' disableElevation  onClick={handleOnclick}>
+    <Button
+      variant="contained"
+      className={ classes.btn }
+      color='primary' disableElevation
+      onClick={ handleOnclick }
+    >
       Buscar
     </Button>
   );
